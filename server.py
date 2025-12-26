@@ -20,6 +20,10 @@ class RouterHandler(SimpleHTTPRequestHandler):
             self.path = "/search.html"
             return super().do_GET()
 
+        if route == "/add-song":
+            self.path = "/add-song.html"
+            return super().do_GET()
+
         if route.startswith("/static/"):
             return super().do_GET()
 

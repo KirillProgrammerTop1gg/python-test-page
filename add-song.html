@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Searh page</title>
+    <title>Add song page</title>
     <link rel="stylesheet" href="./static/style.css">
   </head>
   <body>
@@ -14,26 +14,33 @@
           <a href="/" class="header__link">Main Page</a>
         </li>
         <li class="header__item">
-          <a href="/search" class="header__link active">Search Page</a>
+          <a href="/search" class="header__link">Search Page</a>
         </li>
         <li class="header__item">
-          <a href="/add-song" class="header__link">Add song Page</a>
+          <a href="/add-song" class="header__link active">Add song Page</a>
         </li>
       </ul>
     </header>
 
-    <section class="song-search__section">
-      <h2 class="subtitle">Search song in charts</h2>
-      <input placeholder="Song name: " class="song-search__input" type="text" />
-      <button type="button" class="song-search__button">Search</button>
-      <h3 class="song-search__mini-title"></h3>
-      <ol class="song-search__result"></ol>
+    <section class="add-song__section">
+      <h2>Adding new song</h2>
+      <input
+        class="add-song__input song-name__input"
+        type="text"
+        placeholder="Song name"
+      />
+      <input
+        class="add-song__input song-artist__input"
+        type="text"
+        placeholder="Artist"
+      />
+      <button class="add-song__button" type="button">Add new song</button>
+      <p class="add-song__result"></p>
     </section>
 
     <footer class="footer">
       <h3 class="footer__text">Don't forget to use our service</h3>
     </footer>
-
     <script type="module" src="./static/script.js"></script>
   </body>
 </html>
